@@ -258,24 +258,31 @@
                 </div>
             </div>
             <div class="row">
+            	<p> </p>
+            	<p> </p>
+            	<p> </p>
+            </div>
+            <div class="row" style="text-align:center">
                 <div class="col-md-3 col-sm-6 col-xs-12">
                 
-                		<i class=" fas fa-road  text-center" style="font-size:90px;color:white; text-align:text-center;"></i>
-
-                    <p class="	text-center" style="font-size: 30px;">+11.000 km rodados</p>
+                	<i class=" fas fa-road  text-center" style="font-size:90px;color:white; text-align:text-center ; "></i>
+					<p id="eleven" class="	text-center" style="font-size: 35px;"></p>
+					<p  class="	text-center" style="font-size: 25px;">Kilômetros Rodados</p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                 	<i class=" fas fa-users  text-center" style="font-size:90px;color:white; text-align:text-center;"></i>
-                   <p class="	text-center" style="font-size: 30px;">6500 pessoas impactadas</p>
+                   <p id="six" class="	text-center" style="font-size: 35px;"></p>
+                   <p  class="	text-center" style="font-size: 25px;">Pessoas Impactadas</p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                 	<i class=" fas fa-chalkboard-teacher  text-center" style="font-size:90px;color:white; text-align:text-center;"></i>
-                	  <p class="	text-center" style="font-size: 30px;">+100 palestras</p>
-                 
+                	  <p id="cem" class="	text-center" style="font-size: 35px;"></p>
+                 		 <p  class="	text-center" style="font-size: 25px;">Palestras Feitas</p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                 	<i class=" fas fa-map-marked-alt  text-center" style="font-size:90px;color:white; text-align:text-center;"></i>
-                	  <p class="	text-center" style="font-size: 30px;">+30 cidades visitadas</p>
+                	  <p id="cidades" class="	text-center" style="font-size: 35px;"></p>
+                	   <p  class="	text-center" style="font-size: 25px;">Cidades Visitadas</p>
                  
                 </div>
               
@@ -559,9 +566,58 @@
     <script src="js/contact_me.js"></script>
     <!-- Counter -->
 	<script src="js/jquery.countTo.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+	<script src="jquery.color.min.js"></script>
+	<script src="Jquery/jquery.animateNumber.min.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+
+    <script>
+
+ $('#eleven')
+  .prop('number', 0)
+  .animateNumber(
+    {
+      number: 11000
+    },
+    2000
+  );
+</script>
+<script>
+
+ $('#six')
+  .prop('number', 0)
+  .animateNumber(
+    {
+      number: 6500
+    },
+    2000
+  );
+</script>
+<script>
+
+ $('#cem')
+  .prop('number', 0)
+  .animateNumber(
+    {
+      number: 100
+    },
+    2000
+  );
+</script>
+<script>
+
+ $('#cidades')
+  .prop('number', 0)
+  .animateNumber(
+    {
+      number: 30
+    },
+    2000
+  );
+</script>
+
 
 </body>
 
